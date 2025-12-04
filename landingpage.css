@@ -19,6 +19,7 @@ Ainda para fazer:
 
 *{
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -225,7 +226,7 @@ main{
     list-style: none;
     margin: 40px 0 40px -10%;
     font-size: 22px;
-    color: var(--branco);
+    color: var(--verdeClaro1);
 }
 li::before{
     content: "✅";
@@ -241,7 +242,7 @@ li::before{
 /*-------------------- Configurações do formulário no div 2 do section -------------------*/
 
 fieldset{
-    width: 70%;
+    width: 30%;
     border-style: solid;
     border-radius: 20px;
     border-width: 5px;
@@ -261,6 +262,7 @@ label{
     font-size: 22px;
 }
 input, select{
+    width: 40vh;
     height: 25px;
     font-size: 20px;
     margin: 0 0 20px 20px;
@@ -509,7 +511,7 @@ footer img{
     /*Configurações do formulário no div 2 do section*/
 
     fieldset{
-        width: 50%;
+        width: 20%;
         border-width: 4px;
         box-shadow: 0 7px 30px 0 var(--amareloEscuro);
         margin: 30px;
@@ -523,6 +525,7 @@ footer img{
         font-size: 21px;
     }
     input, select{
+        width: 20vh;
         margin: 0 0 15px 15px;
         border-radius: 20px;
         font-weight: 500;
@@ -709,7 +712,7 @@ footer img{
     /*Configurações do formulário no div 2 do section*/
 
     fieldset{
-        width: 50%;
+        width: 20%;
         border-width: 3px;
         box-shadow: 0 5px 20px 0 var(--amareloEscuro);
     }
@@ -722,6 +725,7 @@ footer img{
         font-size: 25px;
     }
     input, select{
+        width: 20vh;
         margin: 0 0 15px 15px;
         border-radius: 20px;
         font-weight: 450;
@@ -742,6 +746,7 @@ footer img{
 
     .sct3Div1 p{
         font-size: 35px;
+        text-indent: 20px;
         margin: 35px 0 35px 0;
     }
 
