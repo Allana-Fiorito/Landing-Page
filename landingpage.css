@@ -55,14 +55,14 @@ Ainda para fazer:
 /*------------------------------- display: flex; ---------------------------------*/
 /*-------------------------- justify-content: center; ----------------------------*/
 
-header, .section1, .sct1Div1, .section2, .sct2Div1, .sct2Div2, form, fieldset, .section3, .sct3Div2, .section4, footer{
+header, .section1, .sct1Div1, .section2, .sct2Div1, ul, .sct2Div2, form, fieldset, .section3, .sct3Div2, .section4, footer{
     display: flex;
     justify-content: center;
 }
 
 /*---------------------------- flex-direction: column; ---------------------------*/
 
-body, .sct1Div2, .sct2Div1, fieldset, .section4, footer{
+body, .sct1Div2, .sct2Div1, ul, fieldset, .section4, footer{
     flex-direction: column;
 }
 
@@ -145,14 +145,14 @@ main{
 
 .txt1Sct1Div2{
     color: var(--verdeEscuro);
-    font-size: 40px;
+    font-size: 55px;
 }
 
 /*------------------------------ Texto: "Planilhas" ------------------------------*/
 
 .txt2Sct1Div2{
     color: var(--verde);
-    font-size: 40px;
+    font-size: 55px;
 }
 
 /*------------------------- Botão para o e-book gratuito -------------------------*/
@@ -165,14 +165,14 @@ main{
     width: auto;
     height: auto;
     margin-top: 30px;
-    box-shadow: 0 10px 30px 0px var(--verdeEscuroTr);
+    box-shadow: 0 10px 20px 0px var(--verdeEscuroTr);
 }
 
 /*----------------- Configurações do texto do botão para o e-book ----------------*/
 
 .txtBtnEbookGratuito{
     margin: 25px;
-    font-size: 22px;
+    font-size: 30px;
     text-shadow: 0 3px 5px var(--verdeEscuro);
 }
 
@@ -197,7 +197,8 @@ main{
 
 .txt1Sct2Div1{
     color: var(--branco);
-    font-size: 25px;
+    font-size: 35px;
+    text-indent: 20px;
     margin: 40px 0 20px 0;
     text-shadow: 0 3px 10px var(--sombraCinza);
 }
@@ -206,22 +207,24 @@ main{
 
 .txt2Sct2Div1{
     color: var(--verdeClaro1);
-    font-size: 17px;
+    font-size: 22px;
+    text-indent: 20px;
     margin-bottom: 40px;
 }
 
 /*-------------------- Configurações da imagem no div 1 do 2º section --------------------*/
 
 .LealLogo{
-    width: 250px;
+    width: 350px;
 }
 
 /*--------------------- Configurações da lista no div 1 do 2º section --------------------*/
 
 .sct2Div1 ul{
+    row-gap: 5px;
     list-style: none;
     margin: 40px 0 40px -10%;
-    font-size: 17px;
+    font-size: 22px;
     color: var(--branco);
 }
 li::before{
@@ -238,27 +241,30 @@ li::before{
 /*-------------------- Configurações do formulário no div 2 do section -------------------*/
 
 fieldset{
-    width: 60%;
+    width: 70%;
     border-style: solid;
     border-radius: 20px;
     border-width: 5px;
     border-color: var(--verdeClaro1);
     box-shadow: 0 10px 50px 0 var(--amareloEscuro);
+    margin: 40px 0 55px 0;
 }
 legend{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: var(--branco);
-    font-size: 20px;
+    font-size: 30px;
     text-shadow: 0 3px 10px var(--sombraCinza);
 }
 label{
     margin: 20px;
     color: var(--verdeClaro1);
-    font-size: 15px;
+    font-size: 22px;
 }
 input, select{
+    height: 25px;
+    font-size: 20px;
     margin: 0 0 20px 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     color: var(--verdeEscuro);
     font-weight: 600;
 }
@@ -266,14 +272,14 @@ input, select, .btnEnviar{
     border-style: none;
 }
 .btnEnviar{
-    width: 200px;
-    height: 70px;
-    font-size: 17px;
-    border-radius: 10px;
+    width: 270px;
+    height: 100px;
+    font-size: 27px;
+    border-radius: 15px;
     background-image: var(--dourado);
     text-shadow: 0 1px 2px var(--amarelo), 0 1px 2px var(--amarelo);
-    box-shadow: 0 5px 20px var(--sombraCinza);
-    margin-bottom: 10px;
+    box-shadow: 0 10px 30px var(--sombraCinza);
+    margin: 15px 0 25px 0;
 }
 
 /*------------------------- 🔶 Configurações do 3º section: 🔶 --------------------------*/
@@ -286,33 +292,31 @@ input, select, .btnEnviar{
 
 /*------------------------- Configurações do div 1 do 3º section -------------------------*/
 
-.sct3Div1{
+.sct3Div1, .sct3Div2{
     width: 50%;
+    margin-bottom: 40px;
 }
 
 .sct3Div1 p{
     color: var(--cinzaEscuro);
-    font-size: 25px;
+    font-size: 35px;
     margin: 50px 0 50px 0;
     text-shadow: 0 3px 10px var(--verdeEscuroTr);
 }
 
 .sct3Div1 ul{
+    gap: 5px;
     list-style: none;
-    font-size: 17px;
+    font-size: 22px;
     color: var(--verdeEscuro);
 }
 
 /*------------------------- Configurações do div 2 do 3º section -------------------------*/
 
-.sct3Div2{
-    width: 50%;
-}
-
 /*----------------------------- Imagem do div 2 do 3º section ----------------------------*/
 
 .IMGXLS{
-    width: 450px;
+    width: 530px;
 }
 
 /*------------------------- 🔶 Configurações do 4º section: 🔶 --------------------------*/
@@ -327,20 +331,19 @@ input, select, .btnEnviar{
     border-style: none;
     border-radius: 10px;
     background-color: var(--verde);
-    width: 250px;
-    height: 70px;
-    box-shadow: 0 10px 30px 0 var(--verdeEscuroTr);
+    width: 350px;
+    height: 85px;
+    box-shadow: 0 10px 20px 0 var(--verdeEscuroTr);
     color: var(--branco);
-    margin: 35px;
-    margin-top: 10px;
-    font-size: 22px;
+    font-size: 35px;
     text-shadow: 0 3px 5px var(--verdeEscuro);
 }
 
 /*------------------------------- Texto: "Entenda as funções" ----------------------------*/
 
 .section4 p{
-    font-size: 40px;
+    font-size: 55px;
+    margin-top: 60px;
     color: var(--verdeEscuro);
 }
 
@@ -349,16 +352,15 @@ input, select, .btnEnviar{
     background-color: var(--cinzaEscuro);
     width: auto;
     height: auto;
-    box-shadow: 0 10px 30px 5px var(--verdeEscuroTr);
-    margin: 40px;
-    margin-bottom: 60px;
+    box-shadow: 0 10px 20px 0 var(--verdeEscuroTr);
+    margin: 40px 0 80px 0;
 }
 
 /*-------------------------- Texto: "PROCV / SE - ÍNDICE / CORRESP" ----------------------*/
 
 .section4 div p{
-    font-size: 50px;
-    margin: 40px 55px 40px 55px;
+    font-size: 70px;
+    margin: 50px 65px 50px 65px;
     text-align: center;
     color: var(--branco);
     text-shadow:
@@ -427,7 +429,7 @@ footer img{
     /*Ilustração do cabeçalho/header:*/
 
     .IMGInfoBasica{
-        height: 15vh;
+        height: 20vh;
     }
 
     /*Ilustração do div 1 do 1º section*/
@@ -447,27 +449,28 @@ footer img{
     /*Texto: "SAIBA TUDO SOBRE"*/
 
     .txt1Sct1Div2{
-        font-size: 30px;
+        font-size: 35px;
         margin-top: 20px;
     }
 
     /*Texto: "Planilhas"*/
 
     .txt2Sct1Div2{
-        font-size: 30px;
+        font-size: 35px;
     }
 
     /*Botão para o e-book gratuito*/
 
     .btnEbookGratuito{ 
         margin: 20px 0 20px 0;
+        box-shadow: 0 7px 20px 0px var(--verdeEscuroTr);
     }
 
     /*Configurações do texto do botão para o e-book*/
 
     .txtBtnEbookGratuito{
         margin: 15px;
-        font-size: 20px;
+        font-size: 25px;
         text-shadow: 0 3px 5px var(--verdeEscuro);
     }
 
@@ -478,7 +481,7 @@ footer img{
     /*Texto: "Aprenda a usar [...]"*/
 
     .txt1Sct2Div1{
-        font-size: 22px;
+        font-size: 27px;
         margin: 30px 0 15px 0;
         text-shadow: 0 4px 7px var(--sombraCinza);
     }
@@ -486,21 +489,21 @@ footer img{
     /*Texto: "Um material eduvativo, [...]"*/
 
     .txt2Sct2Div1{
-        font-size: 16px;
+        font-size: 21px;
         margin-bottom: 30px;
     }
 
     /*Configurações da imagem no div 1 do 2º section*/
 
     .LealLogo{
-        width: 230px;
+        width: 270px;
     }
 
     /*Configurações da lista no div 1 do 2º section*/
 
     .sct2Div1 ul{
         margin: 30px 0 30px 0;
-        font-size: 16px;
+        font-size: 21px;
     }
 
     /*Configurações do formulário no div 2 do section*/
@@ -512,22 +515,22 @@ footer img{
         margin: 30px;
     }
     legend{
-        font-size: 17px;
-        margin-bottom: 10px;
+        font-size: 25px;
+        margin-bottom: 15px;
     }
     label{
         margin: 15px;
-        font-size: 14px;
+        font-size: 21px;
     }
     input, select{
         margin: 0 0 15px 15px;
-        border-radius: 10px;
-        font-weight: 400;
+        border-radius: 20px;
+        font-weight: 500;
     }
     .btnEnviar{
-        width: 160px;
-        height: 65px;
-        font-size: 16px;
+        width: 230px;
+        height: 85px;
+        font-size: 22px;
     }
 
     /*🔷 Configurações do 3º section: 🔷*/
@@ -535,18 +538,18 @@ footer img{
     /*Configurações do div 1 do 3º section*/
 
     .sct3Div1 p{
-        font-size: 22px;
+        font-size: 27px;
         margin: 30px 0 30px 0;
     }
 
     .sct3Div1 ul{
-        font-size: 16px;
+        font-size: 21px;
     }
 
     /*Imagem do div 2 do 3º section*/
 
     .IMGXLS{
-     width: 380px;
+     width: 430px;
     }
 
     /*🔷 Configurações do 4º section: 🔷*/
@@ -554,16 +557,16 @@ footer img{
     /*Configurações do botão no 4º section para o e-book*/
 
     .section4 button{
-        width: 240px;
-        height: 60px;
-        margin: 10px 0 30px 0;
-        font-size: 21px;
+        width: 320px;
+        height: 80px;
+        font-size: 32px;
     }
 
     /*Texto: "Entenda as funções"*/
 
     .section4 p{
-        font-size: 37px;
+        font-size: 45px;
+        margin-top: 50px;
     }
 
     .section4 div{
@@ -571,14 +574,13 @@ footer img{
         width: auto;
         height: auto;
         box-shadow: 0 10px 30px 5px var(--verdeEscuroTr);
-        margin: 40px;
-        margin-bottom: 60px;
+        margin: 50px 0 60px 0;
     }
 
     /* Texto: "PROCV / SE - ÍNDICE / CORRESP"*/
 
     .section4 div p{
-        font-size: 45px;
+        font-size: 60px;
         margin: 35px 50px 35px 50px;
     }
 
@@ -592,13 +594,13 @@ footer img{
     
     footer p{
         margin-top: 30px;
-        font-size: 16px;
+        font-size: 20px;
     }
  
     /* Imagem do footer/rodapé*/
 
     footer img{
-        width: 60vh;
+        width: 70vw;
         margin: 20px 0 20px 0;
     }
 }
@@ -627,14 +629,13 @@ footer img{
     /*Ilustração do cabeçalho/header:*/
 
     .IMGInfoBasica{
-        height: 10vw;
+        height: 20vh;
     }
 
     /*Ilustração do div 1 do 1º section*/
 
-
     .IMGPC10{
-        height: 30vh;
+        height: 40vh;
     }
 
     /*Configurações do div 2 do 1º section*/
@@ -648,27 +649,28 @@ footer img{
     /*Texto: "SAIBA TUDO SOBRE"*/
 
     .txt1Sct1Div2{
-        font-size: 25px;
-        margin-top: 15px;
+        font-size: 40px;
+        margin-top: -15px;
     }
 
     /*Texto: "Planilhas"*/
 
     .txt2Sct1Div2{
-        font-size: 25px;
+        font-size: 40px;
     }
 
     /*Botão para o e-book gratuito*/
 
-    .btnEbookGratuito{ 
-        margin: 15px 0 15px 0;
+    .btnEbookGratuito{
+        margin: 15px 0 40px 0;
+        box-shadow: 0 7px 20px 0px var(--verdeEscuroTr);
     }
 
     /*Configurações do texto do botão para o e-book*/
 
     .txtBtnEbookGratuito{
-        margin: 10px;
-        font-size: 17px;
+        font-size: 30px;
+        margin: 25px;
     }
 
     /*🟥 Configurações do 2º section: 🟥*/
@@ -678,29 +680,30 @@ footer img{
     /*Texto: "Aprenda a usar [...]"*/
 
     .txt1Sct2Div1{
-        font-size: 20px;
-        margin: 25px 0 10px 0;
+        font-size: 35px;
+        margin: 40px 0 20px 0;
         text-shadow: 0 4px 5px var(--sombraCinza);
     }
 
     /*Texto: "Um material eduvativo, [...]"*/
 
     .txt2Sct2Div1{
-        font-size: 15px;
+        font-size: 25px;
         margin-bottom: 20px;
     }
 
     /*Configurações da imagem no div 1 do 2º section*/
 
     .LealLogo{
-        width: 200px;
+        width: 300px;
     }
 
     /*Configurações da lista no div 1 do 2º section*/
 
     .sct2Div1 ul{
         margin: 20px 0 20px 0;
-        font-size: 15px;
+        font-size: 25px;
+        gap: 5px;
     }
 
     /*Configurações do formulário no div 2 do section*/
@@ -709,77 +712,81 @@ footer img{
         width: 50%;
         border-width: 3px;
         box-shadow: 0 5px 20px 0 var(--amareloEscuro);
-        margin: 20px;
     }
     legend{
-        font-size: 17px;
+        font-size: 30px;
         margin-bottom: 5px;
     }
     label{
         margin: 10px;
-        font-size: 13px;
+        font-size: 25px;
     }
     input, select{
         margin: 0 0 15px 15px;
-        border-radius: 10px;
-        font-weight: 300;
+        border-radius: 20px;
+        font-weight: 450;
     }
     .btnEnviar{
-        width: 150px;
-        height: 55px;
-        font-size: 15px;
+        width: 230px;
+        height: 85px;
+        font-size: 22px;
     }
 
     /*🟥 Configurações do 3º section: 🟥*/
 
     /*Configurações do div 1 do 3º section*/
 
+    .section3{
+        background-image: linear-gradient(to right, var(--verdeClaro1), var(--branco), var(--verdeClaro2));
+    }
+
     .sct3Div1 p{
-        font-size: 20px;
-        margin: 20px 0 20px 0;
+        font-size: 35px;
+        margin: 35px 0 35px 0;
     }
 
     .sct3Div1 ul{
-        font-size: 15px;
+        font-size: 25px;
+        gap: 5px;
     }
 
     /*Imagem do div 2 do 3º section*/
 
     .IMGXLS{
-     width: 320px;
+     width: 400px;
+     margin: -40px 0 35px 0;
     }
 
     /*🟥 Configurações do 4º section: 🟥*/
 
     /*Configurações do botão no 4º section para o e-book*/
 
+    .section4{
+        background-image: linear-gradient(to right, var(--verdeClaro1), var(--branco), var(--verdeClaro2));
+    }
+
     .section4 button{
-        width: 200px;
-        height: 50px;
-        margin: 20px 0 15px 0;
-        font-size: 20px;
+        width: 340px;
+        height: 80px;
+        font-size: 35px;
     }
 
     /*Texto: "Entenda as funções"*/
 
     .section4 p{
-        font-size: 30px;
+        font-size: 50px;
+        margin: 40px 0 35px 0;
     }
 
     .section4 div{
-        background-color: var(--cinzaEscuro);
-        width: auto;
-        height: auto;
-        box-shadow: 0 10px 20px 3px var(--verdeEscuroTr);
-        margin: 20px;
-        margin-bottom: 40px;
+        margin: 20px 0 50px 0;
     }
 
     /* Texto: "PROCV / SE - ÍNDICE / CORRESP"*/
 
     .section4 div p{
-        font-size: 30px;
-        margin: 35px 50px 35px 50px;
+        font-size: 50px;
+        margin: 40px;
     }
 
     /*🟥 Configurações do footer/rodapé: 🟥*/
@@ -791,14 +798,14 @@ footer img{
     /*Texto do footer/rodapé*/
     
     footer p{
-        margin-top: 15px;
-        font-size: 14px;
+        margin-top: 20px;
+        font-size: 20px;
     }
  
     /* Imagem do footer/rodapé*/
 
     footer img{
-        width: 40vh;
-        margin: 10px 0 10px 0;
+        width: 80vw;
+        margin: 20px 0 20px 0;
     }
 }
